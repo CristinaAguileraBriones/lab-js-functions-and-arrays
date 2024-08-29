@@ -85,8 +85,20 @@ const words2 = ["machine", "subset", "trouble", "starting", "matter", "eating", 
 
 function doesWordExist(arrSearch) {
 
-    
+    if(arrSearch.length==0){
 
+        return null
+    }
+
+    if(arrSearch.includes("trouble")){
+
+        return true
+    }else {
+
+        return false
+    }
 
 
 }
+
+console.log(doesWordExist(words2))
