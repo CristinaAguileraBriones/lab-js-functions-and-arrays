@@ -83,14 +83,16 @@ function averageNumbers(arrNums) {
 // Iteration 5 | Find Elements
 const words2 = ["machine", "subset", "trouble", "starting", "matter", "eating", "truth", "disobedience"];
 
-function doesWordExist(arrSearch) {
+function doesWordExist(arrSearch, palabra) {
+
+
 
     if(arrSearch.length==0){
 
         return null
     }
 
-    if(arrSearch.includes("trouble")){
+    if(arrSearch.includes(palabra)){
 
         return true
     }else {
